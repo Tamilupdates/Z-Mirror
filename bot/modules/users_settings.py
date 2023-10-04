@@ -102,23 +102,23 @@ async def get_user_settings(from_user):
     buttons.ibutton("Close", f"userset {user_id} close")
 
     text = f"""
-<u>User Settings of {name}</u>
+<u><b>User Settings of {name}</b></u>
 
-<code>TG Premium Status:</code> <b>{IS_PREMIUM_USER}</b>
+<b>TG Premium Status: {IS_PREMIUM_USER}</b>
 
-<code>Leech Type       :</code> <b>{ltype}</b>
-<code>Leech Prefix     :</code> <b>{escape(lprefix)}</b>
-<code>Leech Split Size :</code> <b>{split_size}</b>
+<b>Leech Type       : {ltype}</b>
+<b>Leech Prefix     : {escape(lprefix)}</b>
+<b>Leech Split Size : {split_size}</b>
 
-<code>Equal Splits     :</code> <b>{equal_splits}</b>
-<code>Thumbnail        :</code> <b>{thumbmsg}</b>
-<code>Media Group      :</code> <b>{media_group}</b>
+<b>Equal Splits     : {equal_splits}</b>
+<b>Thumbnail        : {thumbmsg}</b>
+<b>Media Group      : {media_group}</b>
 
-<code>YT-DLP Options   :</code> <b>{escape(ytopt)}</b>
-<code>Rclone Config    :</code> <b>{rccmsg}</b>
+<b>YT-DLP Options   : {escape(ytopt)}</b>
+<b>Rclone Config    : {rccmsg}</b>
 
-<code>User Dump        :</code> <b>{user_dump}</b>
-<code>Remove Unwanted  :</code> <b>{lremname}</b>
+<b>User Dump        : {user_dump}</b>
+<b>Remove Unwanted  : {lremname}</b>
 """
     return text, buttons.build_menu(1)
 
