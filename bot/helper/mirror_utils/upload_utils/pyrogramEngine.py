@@ -80,8 +80,6 @@ class TgUploader:
                 self.__sent_msg = await self.__listener.logMessage.copy(DUMP_CHAT_ID)
             else:
                 msg = f'<b>File Name</b>: <code>{escape(self.name)}</code>\n\n<b>#Leech_Completed</b>!\n'
-                msg += f'<b>Done By</b>: {self.__listener.tag}\n'
-                msg += f'<b>User ID</b>: <code>{self.__listener.message.from_user.id}</code>'
                 self.__sent_msg = await bot.send_message(DUMP_CHAT_ID, msg, disable_web_page_preview=True)
             if self.__listener.dmMessage:
                 self.__sent_DMmsg = self.__listener.dmMessage
