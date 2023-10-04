@@ -272,7 +272,7 @@ class TgUploader:
             await self.__listener.onUploadError('Files Corrupted or unable to upload.')
             return
         if config_dict['DUMP_CHAT_ID']:
-            msg = f'<b>File Name</b>: <code>{escape(self.name)}</code>\n\n'
+            msg = f'<b>File Name : {escape(self.name)}</b>\n\n'
             msg += f'<b>#Leech_Completed</b>\n'
             await self.__sent_msg.reply(text=msg, quote=True, disable_web_page_preview=True)
         LOGGER.info(f"Leech Completed: {self.name}")
