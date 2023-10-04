@@ -249,8 +249,7 @@ async def start(_, message):
                        'Thank You'
     else:
         tag = message.from_user.mention
-        start_string = 'Start me in DM, not in the group.\n' \
-                       f'cc: {tag}'
+        start_string = 'Start me in DM, not in the group.'
     await sendMessage(message, start_string)
 
 
