@@ -273,8 +273,7 @@ class TgUploader:
             return
         if config_dict['DUMP_CHAT_ID']:
             msg = f'<b>File Name</b>: <code>{escape(self.name)}</code>\n\n'
-            msg += f'<b>LeechCompleted</b>!\n<b>Done By</b>: {self.__listener.tag}\n'
-            msg += f'<b>User ID</b>: <code>{self.__listener.message.from_user.id}</code>'
+            msg += f'<b>LeechCompleted</b>\n'
             await self.__sent_msg.reply(text=msg, quote=True, disable_web_page_preview=True)
         LOGGER.info(f"Leech Completed: {self.name}")
         await self.__listener.onUploadComplete(None, size, self.__msgs_dict, self.__total_files, self.__corrupted, self.name)
