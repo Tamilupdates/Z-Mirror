@@ -104,7 +104,7 @@ async def get_user_settings(from_user):
     text = f"""
 <u><b>User Settings of {name}</b></u>
 
-<b>TG Premium Status: {IS_PREMIUM_USER}</b>
+<b>Premium Status: {IS_PREMIUM_USER}</b>
 
 <b>Leech Type       : {ltype}</b>
 <b>Leech Prefix     : {escape(lprefix)}</b>
