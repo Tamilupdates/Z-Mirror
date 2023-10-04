@@ -209,6 +209,8 @@ async def split_file(path, size, file_, dirpath, split_size, listener, start_tim
 
 
 async def remove_unwanted(file_, lremname):
+    if lremname.startswith('www'):
+        lremname = ' '.join(file_.split()[1:])
     if lremname and not lremname.startswith('|'):
         lremname = f"|{lremname}"
     lremname = lremname.replace('\s', ' ')

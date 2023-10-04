@@ -108,6 +108,7 @@ async def get_user_settings(from_user):
 
 <b>Leech Type       :</b> <b>{ltype}</b>
 <b>Leech Prefix     :</b> <b>{escape(lprefix)}</b>
+<b>Leech Remname  :</b> <b>{lremname}</b>
 <b>Leech Split Size :</b> <b>{split_size}</b>
 
 <b>Equal Splits     :</b> <b>{equal_splits}</b>
@@ -118,7 +119,6 @@ async def get_user_settings(from_user):
 <b>Rclone Config    :</b> <b>{rccmsg}</b>
 
 <b>User Dump        :</b> <b>{user_dump}</b>
-<b>Remove Unwanted  :</b> <b>{lremname}</b>
 """
     return text, buttons.build_menu(1)
 
