@@ -47,7 +47,7 @@ class TgUploader:
         self.__as_doc = False
         self.__media_group = False
         self.__sent_DMmsg = None
-        self.__button = None
+        self.__button = InlineKeyboardMarkup([[InlineKeyboardButton(text='Save Message', callback_data="save")]])
         self.__upload_dest = None
 
     async def __upload_progress(self, current, total):
