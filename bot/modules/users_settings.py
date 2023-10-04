@@ -399,13 +399,13 @@ Timeout: 60 sec
         rmsg = f'''
 Send Leech Prefix. Timeout: 60 sec
 Examples:
-1. <code>{escape('<b>Join: @Z_Mirror</b>')}</code> 
+1. <code>{escape('@Channel_Name')}</code> 
 This will give output as:
-<b>Join: @Z_Mirror</b>  <code>69MB.bin</code>.
+<b>Join: @Channel_Name</b>  <code>700MB.mkv</code>.
 
-2. <code>{escape('<code>Join: @Z_Mirror</code>')}</code> 
+2. <code>{escape('<code>@Channel_Name</code>')}</code> 
 This will give output as:
-<code>Join: @Z_Mirror</code> <code>69MB.bin</code>.
+<code>Join: @Channel_Name</code> <code>700MB.mkv</code>.
 
 Check all available formatting options <a href="https://core.telegram.org/bots/api#formatting-options">HERE</a>.
         '''

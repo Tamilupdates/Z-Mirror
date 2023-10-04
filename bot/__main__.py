@@ -243,12 +243,10 @@ async def start(_, message):
         msg += f'Validity: {get_readable_time(int(config_dict["TOKEN_TIMEOUT"]))}'
         return await sendMessage(message, msg)
     elif config_dict['DM_MODE'] and message.chat.type != message.chat.type.SUPERGROUP:
-        start_string = 'Bot Started.\n' \
-                       'Now I will send all of your stuffs here.\n' \
-                       'Use me at: @Z_Mirror'
+        start_string = <b>'Bot Started.\n' \
+                       'Now I will send all of your stuffs here.'</b>
     elif not config_dict['DM_MODE'] and message.chat.type != message.chat.type.SUPERGROUP:
         start_string = 'Sorry, you cannot use me here!\n' \
-                       'Join: @Z_Mirror to use me.\n' \
                        'Thank You'
     else:
         tag = message.from_user.mention
